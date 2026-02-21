@@ -1,113 +1,137 @@
-🌍 Tourism Recommendation System
-Labmentix Internship Task
+# 🌍 Tourism Recommendation System
 
-Name: Ishan Chowdhury
-Domain: Data Science with AI & Machine Learning
-Internship: Labmentix
+### Labmentix Internship Task
 
-📌 Project Description
+**Name:** Ishan Chowdhury\
+**Domain:** Data Science with AI & Machine Learning\
+**Internship:** Labmentix
 
-This project is developed as part of my Labmentix Internship Task under the Data Science with AI & Machine Learning domain.
+------------------------------------------------------------------------
 
-The objective of this project is to analyze travel-related datasets, build predictive models for user ratings, and develop a personalized tourism recommendation system based on user behavior and popularity trends.
+## 📌 Project Description
 
-🎯 Project Objectives
+This project was developed as part of my **Labmentix Internship Task**
+under the **Data Science with AI & Machine Learning** domain.
 
-Clean and merge multiple relational travel datasets
+The aim of this project is to analyze tourism and travel datasets, build
+machine learning models to predict user ratings, and create a
+personalized recommendation system that suggests destinations based on
+user behavior and popularity trends.
 
-Perform exploratory data analysis (EDA)
+------------------------------------------------------------------------
 
-Build machine learning models for rating prediction and classification
+## 🎯 Project Objectives
 
-Develop a recommendation engine
+-   Perform data cleaning and preprocessing on travel datasets\
+-   Merge relational CSV files into a structured dataset\
+-   Conduct exploratory data analysis (EDA)\
+-   Build machine learning models for prediction and classification\
+-   Develop a personalized tourism recommendation system\
+-   Deploy an interactive dashboard for insights
 
-Create an interactive dashboard for real-time insights
+------------------------------------------------------------------------
 
-🔍 What the Project Does
-1️⃣ Data Loading & Processing
+## 🔍 What the Project Does
 
-Loads multiple travel-related CSV datasets
+### 1️⃣ Data Loading & Cleaning
 
-Cleans and merges relational data
+-   Loads multiple tourism-related CSV datasets\
+-   Cleans missing and inconsistent values\
+-   Merges relational datasets into a unified structure
 
-Handles missing values and formatting issues
+### 2️⃣ Exploratory Data Analysis
 
-2️⃣ Exploratory Data Analysis
+-   Identifies travel trends and rating distributions\
+-   Generates key performance indicators (KPIs)\
+-   Provides geographic and popularity insights
 
-Generates key performance indicators (KPIs)
+### 3️⃣ Machine Learning
 
-Identifies rating trends and travel patterns
+-   **Random Forest Regressor** for predicting user ratings\
+-   **Random Forest Classifier** for quality categorization\
+-   Model evaluation using performance metrics
 
-Provides geographic insights
+### 4️⃣ Recommendation System
 
-3️⃣ Machine Learning
+-   Personalized recommendations based on user history\
+-   Popularity-based fallback suggestions\
+-   Intelligent filtering logic for better suggestions
 
-Random Forest Regressor for user rating prediction
+### 5️⃣ Interactive Dashboard
 
-Random Forest Classifier for quality labeling
+-   Built using Streamlit\
+-   Displays real-time KPIs\
+-   Interactive charts and recommendation outputs
 
-4️⃣ Recommendation System
+------------------------------------------------------------------------
 
-User-history based personalized recommendations
+## 📂 Project Structure
 
-Popularity-based fallback recommendations
+    Tourism_Recommendation_System/
+    │
+    ├── app.py
+    ├── src/
+    │   ├── cleaning.py
+    │   ├── models.py
+    │
+    ├── data/
+    │   └── raw/
+    │
+    ├── requirements.txt
+    └── README.md
 
-5️⃣ Interactive Dashboard
+------------------------------------------------------------------------
 
-Built using Streamlit
+## 📊 Output Generated
 
-Displays real-time KPIs
+-   Cleaned dataset\
+-   Trained machine learning models (.pkl files)\
+-   Interactive Streamlit dashboard\
+-   Personalized destination recommendations
 
-Interactive charts and travel insights
+------------------------------------------------------------------------
 
-📂 Project Structure
-Tourism_Recommendation_System/
-├── app.py
-├── src/
-│   ├── cleaning.py
-│   ├── models.py
-├── data/
-│   └── raw/
-├── requirements.txt
-└── README.md
-📊 Output Generated
+## 🛠️ Technologies Used
 
-Cleaned dataset
+-   Python\
+-   Pandas\
+-   Plotly\
+-   Scikit-learn\
+-   Streamlit\
+-   Local CSV & Pickle storage
 
-Trained ML models (Pickle files)
+------------------------------------------------------------------------
 
-Interactive Streamlit dashboard
+## ▶️ How to Run
 
-Personalized travel recommendations
+### Step 1: Install Dependencies
 
-🛠️ Technologies Used
+    pip install -r requirements.txt
 
-Python
+### Step 2: Prepare Data
 
-Pandas
+Place all raw CSV files inside:
 
-Plotly
+    data/raw/
 
-Scikit-learn
+### Step 3: Run Data Cleaning
 
-Streamlit
+    python src/cleaning.py
 
-Local CSV & Pickle storage
+### Step 4: Train Models
 
-▶️ How to Run
-Step 1: Install Dependencies
-pip install -r requirements.txt
-Step 2: Prepare Data
+    python src/models.py
 
-Ensure CSV files are placed inside:
+### Step 5: Launch Application
 
-data/raw/
-Step 3: Run Data Cleaning
-python src/cleaning.py
-Step 4: Train Models
-python src/models.py
-Step 5: Launch Application
-streamlit run app.py
-🏁 Conclusion
+    streamlit run app.py
 
-This project demonstrates an end-to-end machine learning system combining data preprocessing, predictive modeling, recommendation systems, and interactive dashboard development, completed as part of the Labmentix Internship.
+------------------------------------------------------------------------
+
+## 🏁 Conclusion
+
+This project demonstrates a complete end-to-end machine learning
+pipeline, integrating data preprocessing, predictive modeling,
+recommendation systems, and dashboard deployment. It highlights
+practical implementation of ML concepts in a real-world tourism domain
+as part of the **Labmentix Internship**.
