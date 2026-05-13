@@ -1,0 +1,6 @@
+matplotlib 
+pillow
+tensorflow
+scikit-learn 
+seaborn
+streamlit
