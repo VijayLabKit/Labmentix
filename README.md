@@ -297,9 +297,9 @@ Deep Learning time-series forecasting application.
 
 **Ishan Chowdhury**
 
-- GitHub: https://github.com/
-- LinkedIn: https://linkedin.com/in/
-- Email: your-email@example.com
+- GitHub: https://github.com/VijayLabKit
+- LinkedIn: https://linkedin.com/in/vijay-ishan
+- Email: vijayishanchowdhury@gmail.com
 
 ---
 
