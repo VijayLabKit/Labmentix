@@ -1,0 +1,44 @@
+# ============================================================
+# Agentic AI Travel Planning Assistant — Docker Compose
+# ============================================================
+version: "3.9"
+
+services:
+  travel-planner:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: travel-ai-assistant
+    ports:
+      - "8501:8501"
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+      - OPENAI_MODEL=${OPENAI_MODEL:-gpt-4o-mini}
+      - LOG_LEVEL=${LOG_LEVEL:-INFO}
+    volumes:
+      # Persist the SQLite database and logs across container restarts
+      - travel_db:/app/database
+      - travel_logs:/app/logs
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8501/_stcore/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 20s
+
+  # Optional: run the test suite in an isolated container
+  tests:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: travel-ai-tests
+    command: ["python", "-m", "pytest", "tests/", "-v", "--tb=short"]
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+    profiles:
+      - test
+
+volumes:
+  travel_db:
+  travel_logs:

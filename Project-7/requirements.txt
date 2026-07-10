@@ -1,0 +1,37 @@
+# Core AI / Agent Framework
+langchain==1.3.9
+langchain-core==1.4.7
+langchain-google-genai
+langgraph==1.2.5
+
+# LLM Provider
+google-generativeai
+
+# Web UI
+streamlit==1.58.0
+
+# Data Validation
+pydantic==2.13.4
+
+# HTTP
+requests==2.33.1
+
+# Vector Search (with NumPy fallback if unavailable)
+faiss-cpu==1.14.3
+numpy==2.4.4
+
+# TF-IDF Semantic Search
+scikit-learn==1.8.0
+
+# Logging
+loguru==0.7.3
+
+# Environment Variables
+python-dotenv==1.2.2
+
+# Testing
+pytest==9.0.3
+pytest-mock>=3.12.0
+
+# Optional: data analysis utilities
+pandas==3.0.2
